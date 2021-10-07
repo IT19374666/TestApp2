@@ -15,7 +15,7 @@ export class FastApiService {
 
   constructor(http: HttpClient) {
     this._http = http;
-    this._baseUrl = "http://127.0.0.1:8000 "
+    this._baseUrl = "https://fastapi-test-project.herokuapp.com"
    
   }
 
@@ -29,6 +29,6 @@ export class FastApiService {
 
   public predict(data: App): Observable<string> {
     //this.returned_data=this._http.post<string>("http://localhost:8000" + '/predict', data)
-    return this._http.post<string>("http://localhost:8000" + '/predict', data);
+    return this._http.post<string>("https://fastapi-test-project.herokuapp.com" + '/predict', data);
   }
 }
