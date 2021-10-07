@@ -29,6 +29,6 @@ export class FastApiService {
 
   public predict(data: App): Observable<string> {
     //this.returned_data=this._http.post<string>("http://localhost:8000" + '/predict', data)
-    return this._http.post<string>("https://fastapi-test-project.herokuapp.com" + '/predict', data);
+    return this._http.post<string>("https://fdm-googleplaystore-clustering.herokuapp.com" + '/predict', data);
   }
 }
